@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.2), /* Adjust the RGBA values as needed */
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("/bg.png"); /* Replace with your image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+
+
+  }
