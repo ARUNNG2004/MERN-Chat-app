@@ -20,10 +20,7 @@ app.use(cookieParser())
 const PORT = process.env.PORT || 5000
 
 const __dirname = path.resolve()
-app. get ( "/" ,
-    (req, res)=> {
-    // root route http://localhost:5090/
-    res.send("hello") })
+
 
 app.use ( "/api/auth" ,authRoutes)
 app.use ( "/api/messages" ,messagesRoutes)
