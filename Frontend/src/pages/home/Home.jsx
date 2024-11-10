@@ -8,7 +8,7 @@ const Home = () => {
 
   const [showSidebar, setShowSidebar] = useState(false);
   return (
-    <div className='flex sm:h-[450px] md:h-[550px] h-screen w-full rounded-lg overflow-auto bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
+    <div className='flex sm:h-[450px] p-2 md:h-[550px] h-screen w-full rounded-lg overflow-auto bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
     {/* Mobile Toggle Button */}
     <button
       onClick={() => setShowSidebar(!showSidebar)}
@@ -27,7 +27,7 @@ const Home = () => {
     {/* Sidebar */}
     <div className={`
       fixed sm:relative
-      w-[280px]
+      w-[380px]
       h-full
       z-40
       transition-transform duration-300
@@ -40,7 +40,7 @@ const Home = () => {
     {/* Mobile Overlay */}
     {showSidebar && (
       <div
-        className="fixed inset-0 z-30 bg-black/50 sm:hidden"
+        className="fixed  h-auto inset-0 z-30 bg-black/50 sm:hidden"
         onClick={() => setShowSidebar(false)}
       />
     )}
