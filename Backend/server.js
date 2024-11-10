@@ -1,4 +1,6 @@
 
+
+import path from "path"
 import  dotenv from  "dotenv"
 import cookieParser from "cookie-parser";
 import authRoutes from "./routes/auth.routes.js"
@@ -16,6 +18,8 @@ app.use(express.json())
 app.use(cookieParser())
 
 const PORT = process.env.PORT || 5000
+
+const __dirname = path.resolve()
 app. get ( "/" ,
     (req, res)=> {
     // root route http://localhost:5090/
@@ -28,7 +32,11 @@ app.use("/api/users", userRoutes);
 
 
 
+app.use(express.static(path.join(__dirname,"/Frontend/dist")))
 
+
+app.get("*",(req, res)=>
+    {res.sendFile(path.join(__dirname,"Frontend","dist", "index.html"),)})
 
 
 
