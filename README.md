@@ -1,6 +1,9 @@
 # MERN Chat App
 
 A real-time chat application built with the **MERN Stack** (MongoDB, Express, React, Node.js). This application allows users to communicate instantly in various chat rooms or direct messages. With robust security measures, the app ensures a smooth and secure chatting experience.
+## Live Demo
+
+You can check out the live demo of the MERN Chat App on [Click Here](https://mern-chate-app.onrender.com/).
 
 ## Features
 
@@ -65,6 +68,7 @@ To run the chat app locally, follow these steps:
     ```
 
 The app will be available at `http://localhost:3000` for the frontend and `http://localhost:5000` for the backend.
+
 
 ## Folder Structure
 
